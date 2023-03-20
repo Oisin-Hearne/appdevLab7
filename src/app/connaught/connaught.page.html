@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Connaught</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="align-content: center;">
+    <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Flag_of_Connacht.svg/300px-Flag_of_Connacht.svg.png" style="height: 150; width: 200;"></ion-img>
+  </div>
+
+  <ul>
+    <li *ngFor="let c of counties">{{c}}</li>
+  </ul>
+
+
+</ion-content>

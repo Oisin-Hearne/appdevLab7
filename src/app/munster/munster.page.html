@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Munster</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="align-content: center;">
+    <ion-img src="http://cdn2.bigcommerce.com/server4100/fbaa7/images/stencil/1024x1024/products/143/234/MunsterFlag__26591.1321815062.gif?c=2" style="height: 150; width: 200;"></ion-img>
+  </div>
+
+  <ul>
+    <li *ngFor="let c of counties">{{c}}</li>
+  </ul>
+
+
+</ion-content>
