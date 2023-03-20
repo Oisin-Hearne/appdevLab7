@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'connaught',
     loadChildren: () => import('./connaught/connaught.module').then( m => m.ConnaughtPageModule)
   },
+  {
+    path: 'leinster-counties',
+    loadChildren: () => import('./leinster-counties/leinster-counties.module').then( m => m.LeinsterCountiesPageModule)
+  },
 ];
 
 @NgModule({

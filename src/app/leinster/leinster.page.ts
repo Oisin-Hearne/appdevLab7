@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-leinster',
@@ -7,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeinsterPage implements OnInit {
 
-  constructor() { }
+  constructor(private nc: NavController) { }
 
   ngOnInit() {
   }
 
-  counties: string[] = ["Carlow", "Dublin", "Kildare", "Kilkenny", "Laois", "Longford", "Louth", "Meath", "Offaly", "Westmeath", "Wexford", "Wicklow"];
 
+  buttonClicked() {
+    this.nc.navigateForward("/leinster-counties");
+  }
 }
